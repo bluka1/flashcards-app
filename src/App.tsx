@@ -4,9 +4,11 @@ import Home from './pages/Home/Home';
 import Create from './pages/Create/Create';
 import Study from './pages/Study/Study';
 import Settings from './pages/Settings/Settings';
+import { ThemeProvider } from './hooks/useDarkMode';
 
 function App() {
   return (
+    <ThemeProvider>
     <Routes>
       <Route element={<Layout />}>
         {/* Definiramo rutu za početnu stranicu */}
@@ -17,6 +19,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
       </Route>
     </Routes>
+    </ThemeProvider>
   );
 }
 

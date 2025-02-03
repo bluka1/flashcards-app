@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import { Home, PlusCircle, BookOpen, Settings } from 'lucide-react';
 import { useTheme } from '../../hooks/useDarkMode';
-import { Moon, Sun } from 'lucide-react';
+
 
 // Definiramo tip za našu navigacijsku stavku kako bismo osigurali konzistentnost
 type NavItem = {
@@ -39,13 +39,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       {/* Glavni sadržaj stranice */}
-      <button 
-        onClick={toggleDarkMode}
-        className="button-primary fixed top-4 right-4 rounded-full p-2"
-        aria-label="Toggle dark mode"
-      >
-        {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-      </button>
+     
       <main className="flex-1 container mx-auto px-4 pb-20 text-gray-900 dark:text-white">
         <Outlet />
       </main>

@@ -3,6 +3,12 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      perspective: {
+        1000: "1000px",
+      },
+      rotate: {
+        "y-180": "rotateY(180deg)",
+      },
       colors: {
         primary: {
           50: "#f0f9ff",
