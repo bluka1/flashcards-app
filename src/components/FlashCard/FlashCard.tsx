@@ -8,8 +8,7 @@ type FlashCardProps = {
 };
 
 const FlashCard = ({ front, back, deckName }: FlashCardProps) => {
-
-  console.log('DECK NAME: ', deckName)
+  console.log('kdfuhgkjf');
   // State za praćenje je li kartica okrenuta
   const [isFlipped, setIsFlipped] = useState(false);
 
